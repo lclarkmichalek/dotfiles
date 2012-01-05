@@ -1,0 +1,14 @@
+[user]
+	email = bluepeppers@archlinux.us
+	name = Laurie Clark-Michalek
+[core]
+	editor = emacs -nw
+[color]
+	ui = auto
+[merge]
+	stat = true
+[alias]
+        plog = log --oneline --decorate --graph
+        ck = checkout
+        c = commit
+	st = status

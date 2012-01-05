@@ -1,0 +1,88 @@
+#Editors
+alias n="$EDITOR"
+if (which X >/dev/null); then
+    # Emacs client can't deal with sudo.
+    alias sn="sudo emacs"
+else
+    alias sn="sudo $EDITOR"
+fi
+
+if (which pacman >/dev/null); then
+    source $HOME/.arch-alias
+else if (which apt-get >/dev/null); then
+    source $HOME/.debian-alias
+fi
+fi
+
+# File shortcuts
+alias mpd.conf="sudo $EDITOR /etc/mpd.conf"
+alias smb.conf="sudo $EDITOR /etc/samba/smb.conf"
+alias openboxrc="$EDITOR ~/.config/openbox/rc.xml"
+alias menu.xml="$EDITOR ~/.config/openbox/menu.xml"
+alias xorg.conf="sudo $EDITOR /etc/X11/xorg.conf"
+alias fstab="sudo $EDITOR /etc/fstab"
+alias menu.lst="sudo $EDITOR /boot/grub/menu.lst"
+alias brc="$EDITOR ~/.bashrc; source ~/.bashrc"
+alias zrc="$EDITOR ~/.zshrc; source ~/.zshrc"
+alias prc="$EDITOR ~/.pythonrc"
+alias arc="$EDITOR ~/.alias; source ~/.alias"
+alias frc="$EDITOR ~/.functions; source ~/.functions"
+alias zarc="$EDITOR ~/.zalias; source ~/.zalias"
+alias src="$EDITOR ~/.screenrc"
+alias envrc="$EDITOR ~/.envrc; source ~/.envrc"
+alias xrc="$EDITOR ~/.xinitrc"
+alias mpd.conf="sudo $EDITOR /etc/mpd.conf"
+
+if (which mpd >/dev/null); then
+    # Audio
+    alias play="mpc play"
+    alias pause="mpc toggle"
+    alias stop="mpc stop"
+    alias next="mpc next"
+    alias prev="mpc prev"
+    alias toggle="mpc toggle"
+    alias plr="ncmpcpp"
+fi
+
+# Mount
+alias mount="sudo mount"
+alias umount="sudo umount"
+alias fsck="sudo fsck"
+
+# Shutdown
+alias shutdown="sudo shutdown"
+alias shuty="sudo shutdown -h now"
+alias reboot="sudo reboot"
+
+# Ping
+alias pingy="ping -c 5"
+alias gping="ping -c 5 www.google.is"
+
+if [ -d "$HOME/Code" ]; then
+    # Code
+    alias ide="cd ~/Code/"
+    alias cide="cd ~/Code/C++"
+    alias pide="cd ~/Code/Python"
+    alias dide="cd ~/Code/D"
+    alias gide="cd ~/Code/Go"
+    alias ride="pcd ~/Code/Python/RemindMe; screen"
+    alias hide="cd ~/Code/Haskell"
+    alias lide="cd ~/Code/Lua"
+fi
+alias g="git"
+
+# Dots
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+#Misc
+alias s="sudo"
+alias c="clear"
+alias e="exit"
+alias q="exit || exit"
+alias start="startx"
+alias ls='ls --color=auto'
+alias ll='ls --color=auto -lah'
+alias df='df -h'

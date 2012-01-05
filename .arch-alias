@@ -1,0 +1,33 @@
+# Arch linux specific alias'
+
+# File shortcuts
+alias mirrorlist="sudo $EDITOR /etc/pacman.d/mirrorlist"
+alias rc.conf="sudo $EDITOR /etc/rc.conf"
+alias powerpill.conf="sudo $EDITOR /etc/powerpill.conf"
+alias mkinitcpio.conf="sudo $EDITOR /etc/mkinitcpio.conf"
+alias rc.local="sudo $EDITOR /etc/rc.local"
+alias modprobe.conf="sudo $EDITOR /etc/modprobe.d/modprobe.conf"
+
+#Pacman
+alias pacman="sudo pacman"
+alias p="sudo pacman"
+alias pi="sudo pacman -S"
+alias ps="sudo pacman -Ss"
+alias pu="sudo powerpill -Syu"
+alias pr="sudo pacman -R"
+alias pil="sudo pacman -U"
+alias pli="sudo pacman -Ql"
+alias psi="sudo pacman -Qs"
+alias pinfo="sudo pacman -Si"
+alias unlockpackman="sudo rm /var/lib/pacman/db.lck"
+
+#Yaourt
+alias y="yaourt"
+alias yi="yaourt -S"
+alias ys="yaourt -Ss"
+alias yu="yaourt -Syu --aur"
+alias yr="yaourt -R"
+alias ysi="yaourt -Qs"
+
+# Startup scripts
+alias rc.d='sudo rc.d'
