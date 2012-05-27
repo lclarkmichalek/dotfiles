@@ -3,4 +3,7 @@
 DOTFILES_DIR=`dirname $(readlink -f $0)`
 cd $DOTFILES_DIR
 
-git ls-files | xargs ln -sft $HOME
+for file in `git ls-files`; do
+    file=`readlink -f $file`
+    xargs ln -sft $HOME $file
+done
