@@ -5,8 +5,6 @@ trayer --edge top --align right --SetDockType true --SetPartialStrut true --expa
 
 pidgin &
 
-$HOME/Voc/bin/rotatewallpaper.sh &
-
-emacs --daemon &
+transmission-gtk -m &
 
 exec ck-launch-session xmonad
