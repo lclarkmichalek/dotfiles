@@ -79,7 +79,6 @@ alias .....="cd ../../../.."
 
 #Misc
 alias s="sudo"
-alias c="clear"
 alias e="exit"
 alias q="exit || exit"
 alias start="startx"
