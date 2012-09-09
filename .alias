@@ -63,7 +63,6 @@ if [ -d "$HOME/Code" ]; then
     alias pide="cd ~/Code/Python"
     alias dide="cd ~/Code/D"
     alias gide="cd ~/Code/Go"
-    alias ride="pcd ~/Code/Python/RemindMe; screen"
     alias hide="cd ~/Code/Haskell"
     alias lide="cd ~/Code/Lua"
 fi
