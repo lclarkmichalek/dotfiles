@@ -70,5 +70,9 @@ bindkey "\e\e[D" backward-word
 bindkey "^H" backward-delete-word
 
 if [ ! -e /tmp/emacs$(id -u `whoami`) ]; then
-    emacs --daemon >>/dev/null &
+    emacs --daemon >>/dev/null
+fi
+
+if [ -z "$DISPLAY" ]; then
+    startx
 fi
