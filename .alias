@@ -74,6 +74,11 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
+# Power management
+alias susp="sudo systemctl start suspend.target"
+alias shuty="sudo systemctl start shutdown.target"
+alias reboot="sudo systemctl start reboot.target"
+
 #Misc
 alias s="sudo"
 alias e="exit"
@@ -82,3 +87,4 @@ alias start="startx"
 alias ls='ls --color=auto'
 alias ll='ls --color=auto -lah'
 alias df='df -h'
+alias sys='sudo systemctl'
