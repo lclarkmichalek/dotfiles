@@ -1,10 +1,14 @@
 xsetroot -cursor_name left_ptr
 setxkbmap -layout gb
 
-trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 5 --transparent true --tint 0x191970 --height 12 &
+if [ -f $HOME/.Xmodmap ]; then
+    xmodmap $HOME/.Xmodmap
+fi
 
-pidgin &
+if which pm-suspend >>/dev/null; then
+    xautolock -time 10 -locker "sudo systemctrl start suspend.target" &
+fi
 
-transmission-gtk -m &
+emacsclient -c &
 
-exec ck-launch-session xmonad
+exec qtile
