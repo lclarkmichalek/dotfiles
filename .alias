@@ -49,9 +49,12 @@ alias mount="sudo mount"
 alias umount="sudo umount"
 alias fsck="sudo fsck"
 
-# Ping
+# Networking
 alias pingy="ping -c 5"
 alias gping="ping -c 5 www.google.is"
+if which wifi-menu >>/dev/null; then
+   alias wifi="sudo wifi-menu"
+fi
 
 if [ -d "$HOME/Code" ]; then
     # Code
