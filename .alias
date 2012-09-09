@@ -49,11 +49,6 @@ alias mount="sudo mount"
 alias umount="sudo umount"
 alias fsck="sudo fsck"
 
-# Shutdown
-alias shutdown="sudo shutdown"
-alias shuty="sudo shutdown -h now"
-alias reboot="sudo reboot"
-
 # Ping
 alias pingy="ping -c 5"
 alias gping="ping -c 5 www.google.is"
