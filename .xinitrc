@@ -5,9 +5,7 @@ if [ -f $HOME/.Xmodmap ]; then
     xmodmap $HOME/.Xmodmap
 fi
 
-if which pm-suspend >>/dev/null; then
-    xautolock -time 10 -locker "sudo systemctrl start suspend.target" &
-fi
+xautolock -time 10 -locker "sudo systemctrl start suspend.target" &
 
 emacsclient -c &
 
