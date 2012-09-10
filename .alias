@@ -68,9 +68,9 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # Power management
-alias susp="sudo systemctl start suspend.target"
-alias shuty="sudo systemctl start shutdown.target"
-alias reboot="sudo systemctl start reboot.target"
+alias susp="sudo systemctl suspend"
+alias shuty="sudo systemctl halt"
+alias reboot="sudo systemctl reboot"
 
 #Misc
 alias s="sudo"
