@@ -16,12 +16,6 @@ fi
 
 # File shortcuts
 alias mpd.conf="sudo $EDITOR /etc/mpd.conf"
-alias smb.conf="sudo $EDITOR /etc/samba/smb.conf"
-alias openboxrc="$EDITOR ~/.config/openbox/rc.xml"
-alias menu.xml="$EDITOR ~/.config/openbox/menu.xml"
-alias xorg.conf="sudo $EDITOR /etc/X11/xorg.conf"
-alias fstab="sudo $EDITOR /etc/fstab"
-alias menu.lst="sudo $EDITOR /boot/grub/menu.lst"
 alias brc="$EDITOR ~/.bashrc; source ~/.bashrc"
 alias zrc="$EDITOR ~/.zshrc; source ~/.zshrc"
 alias prc="$EDITOR ~/.pythonrc"
@@ -31,9 +25,8 @@ alias zarc="$EDITOR ~/.zalias; source ~/.zalias"
 alias src="$EDITOR ~/.screenrc"
 alias envrc="$EDITOR ~/.envrc; source ~/.envrc"
 alias xrc="$EDITOR ~/.xinitrc"
-alias mpd.conf="sudo $EDITOR /etc/mpd.conf"
 
-if (which mpd >/dev/null); then
+if (which mpc >/dev/null); then
     # Audio
     alias play="mpc play"
     alias pause="mpc toggle"
