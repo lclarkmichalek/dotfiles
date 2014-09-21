@@ -8,26 +8,18 @@ alias mkinitcpio.conf="sudo $EDITOR /etc/mkinitcpio.conf"
 alias rc.local="sudo $EDITOR /etc/rc.local"
 alias modprobe.conf="sudo $EDITOR /etc/modprobe.d/modprobe.conf"
 
-#Pacman
-alias pacman="sudo pacman"
-alias p="sudo pacman"
-alias pi="sudo pacman -S"
-alias ps="sudo pacman -Ss"
-alias pu="sudo powerpill -Syu"
-alias pr="sudo pacman -R"
-alias pil="sudo pacman -U"
-alias pli="sudo pacman -Ql"
-alias psi="sudo pacman -Qs"
-alias pinfo="sudo pacman -Si"
-alias unlockpackman="sudo rm /var/lib/pacman/db.lck"
-
-#Yaourt
-alias y="yaourt"
-alias yi="yaourt -S"
-alias ys="yaourt -Ss"
-alias yu="yaourt -Syu --aur"
-alias yr="yaourt -R"
-alias ysi="yaourt -Qs"
+#Aura
+alias aura="sudo aura"
+alias p="sudo aura"
+alias pi="sudo aura -S"
+alias ps="sudo aura -Ss"
+alias pr="sudo aura -R"
+alias pil="sudo aura -U"
+alias pli="sudo aura -Ql"
+alias psi="sudo aura -Qs"
+alias pinfo="sudo aura -Si"
+alias yi="sudo aura -AS"
+alias ys="sudo aura -ASs"
 
 # Startup scripts
 alias rc.d='sudo rc.d'

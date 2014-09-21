@@ -12,3 +12,7 @@
         ck = checkout
         c = commit
 	st = status
+[http]
+	sslVerify = false
+[push]
+	default = simple

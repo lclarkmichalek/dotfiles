@@ -72,3 +72,11 @@ bindkey "^H" backward-delete-word
 if [ ! -e /tmp/emacs$(id -u `whoami`) ]; then
     emacs --daemon >>/dev/null &
 fi
+
+if which rbenv >>/dev/null; then
+  eval "$(rbenv init -)"
+fi
+
+if which fasd >>/dev/null; then
+  eval "$(fasd --init auto)"
+fi

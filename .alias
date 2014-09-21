@@ -1,5 +1,5 @@
 #Editors
-alias n="$EDITOR"
+alias n="TERM=xterm-256color $EDITOR"
 if (which X >/dev/null); then
     # Emacs client can't deal with sudo.
     alias sn="sudo emacs"
